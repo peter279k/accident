@@ -12,7 +12,7 @@ $(function () {
     		});
 
 		$.getJSON("https://gist.githubusercontent.com/tony1223/695a3c4c2d1ccb8eae85/raw/fd29dcf3d5f345f7e77230009bcbdb0e2fd84741/gistfile1.json", function(response) {
-			$("#filter-hurt-input").text("ex: 醫院名稱,辦公室電話等");
+			$("#filter-hurt-input").attr("placeholder", "ex: 醫院名稱,辦公室電話等");
 			$("#updateTime").text("最後更新時間: "+response["lastmodify"]);
 			response = response["data"];
 			var response_count = 0;
@@ -55,7 +55,7 @@ function get_hurt() {
 			theme: "b",
 			html: ""
     		});
-		$("#filter-hurt-input").text("ex: 姓名,編號等");
+		$("#filter-hurt-input").attr("placeholder", "ex: 姓名,編號等");
 		$("#updateTime").text("最後更新時間: "+response["lastmodify"]);
 		var str = "";
 		response = response["data"];
