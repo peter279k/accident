@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>八仙事件</title>
+	<meta charset="utf8" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/get_hospital.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" data-theme="b">
+			<h1>八仙事件</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="navbar">
+				<ul>
+					<li><a id="contact-hospital" href="#" data-role="button">醫院與社福中心聯絡窗口</a></li>
+					<li><a id="hurt-people-data" href="#" data-role="button">八仙塵爆傷者資料</a></li>
+				</ul>
+			</div>
+			<h2 id="updateTime">最後更新時間: </h2>
+			<h2 id="articleTxt">八仙塵爆傷者開放資料查詢</h2>
+			<h2>聯絡作者: <a href="https://www.facebook.com/yunshengl2" target="_blank">yunshengl2</a></h2>
+			<h3>資料來源: <a rel="external" target="_blank" href="https://cdn.rawgit.com/tony1223/098e45623c73274f7ae3/raw/61853db85ea1fa49bb956aeb8f88261f859077e8/gistfile1.json">八仙塵爆傷者開放資料</a>,<a href="https://gist.githubusercontent.com/tony1223/695a3c4c2d1ccb8eae85/raw/fd29dcf3d5f345f7e77230009bcbdb0e2fd84741/gistfile1.json" target="_blank">醫院與社福中心聯絡窗口</a></h3>
+			<h2 class="attention">於臺北市醫院就醫之傷者家屬,若有相關問題,於晚上八點前可撥打社會局社工科電話 02-27206528</h2>
+			<form>
+				<input id="filter-hurt-input" data-type="search" placeholder="ex: 姓名,編號等">
+			</form>
+			<table id="hurt-table" data-role="table" data-filter="true" data-input="#filter-hurt-input" class="ui-responsive ui-shadow ui-overlay-shadow hurt-list" data-mode="reflow"></table>
+		</div>
+	</div>
+</body>
+</html>

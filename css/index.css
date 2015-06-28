@@ -1,0 +1,35 @@
+.ui-table-columntoggle-btn {
+    display: none !important;
+}
+
+#updateTime {
+	color: #663300;
+}
+
+.attention {
+	color: #800000;
+}
+
+#articleTxt {
+	color: #33CC33;
+}
+
+.hurt-list thead th,
+.hurt-list tbody tr:last-child {
+    border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback */
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.hurt-list tbody th,
+.hurt-list tbody td {
+    border-bottom: 1px solid #e6e6e6; /* non-RGBA fallback  */
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.hurt-list tbody tr:last-child th,
+.hurt-list tbody tr:last-child td {
+    border-bottom: 0;
+}
+.hurt-list tbody tr:nth-child(odd) td,
+.hurt-list tbody tr:nth-child(odd) th {
+    background-color: #eeeeee; /* non-RGBA fallback  */
+    background-color: rgba(0,0,0,.04);
+}
