@@ -48,7 +48,7 @@ function get_hurt() {
 		html: ""
     	});
 
-	$.getJSON("https://cdn.rawgit.com/tony1223/098e45623c73274f7ae3/raw/61853db85ea1fa49bb956aeb8f88261f859077e8/gistfile1.json", function(response) {
+	$.getJSON("https://gist.githubusercontent.com/tony1223/098e45623c73274f7ae3/raw/028a76ee07e930e1c8fed8b3df6a68fea7878454/gistfile1.json", function(response) {
 		$.mobile.loading( "show", {
 			text: "載入中...",
 			textVisible: true,
@@ -72,6 +72,8 @@ function get_hurt() {
 			str += "<td>"+response[response_count]["姓名"]+"</td>";
 			str += "<td>"+response[response_count]["性別"]+"</td>";
 			str += "<td>"+response[response_count]["國籍"]+"</td>";
+			if(response[response_count]["年齡"] === null)
+				response[response_count]["年齡"] = "";
 			str += "<td>"+response[response_count]["年齡"]+"</td>";
 			str += "<td>"+response[response_count]["醫療檢傷"]+"</td>";
 			str += "<td>"+response[response_count]["救護檢傷"]+"</td>";
