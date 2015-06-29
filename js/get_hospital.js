@@ -3,6 +3,7 @@ $(function () {
 	get_hurt();
 
 	$("#contact-hospital").click(function() {
+		str = "";
 		$("#hurt-table").text("");
 		$.mobile.loading( "show", {
 			text: "載入中...",
@@ -39,6 +40,7 @@ $(function () {
 });
 
 function get_hurt() {
+	str = "";
 	$("#hurt-table").text("");
 
 	$.mobile.loading( "show", {
