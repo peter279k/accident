@@ -11,7 +11,7 @@ $(function () {
 			html: ""
     		});
 
-		$.getJSON("https://gist.githubusercontent.com/tony1223/695a3c4c2d1ccb8eae85/raw/fd29dcf3d5f345f7e77230009bcbdb0e2fd84741/gistfile1.json", function(response) {
+		$.getJSON("https://gist.githubusercontent.com/tony1223/695a3c4c2d1ccb8eae85/raw", function(response) {
 			$("#filter-hurt-input").attr("placeholder", "ex: 醫院名稱,辦公室電話等");
 			$("#updateTime").text("最後更新時間: "+response["lastmodify"]);
 			response = response["data"];
@@ -48,7 +48,7 @@ function get_hurt() {
 		html: ""
     	});
 
-	$.getJSON("https://gist.githubusercontent.com/tony1223/098e45623c73274f7ae3/raw/028a76ee07e930e1c8fed8b3df6a68fea7878454/gistfile1.json", function(response) {
+	$.getJSON("https://gist.githubusercontent.com/tony1223/098e45623c73274f7ae3/raw", function(response) {
 		$.mobile.loading( "show", {
 			text: "載入中...",
 			textVisible: true,
